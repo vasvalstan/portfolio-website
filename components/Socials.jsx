@@ -14,14 +14,16 @@ const socials = [
   },
 ];
 
+import Link from "next/link";
+
 const Socials = ({ containerStyles, iconStyles }) => {
   return (
     <div className={containerStyles}>
       {socials.map((item, index) => {
         return (
-          <div key={index} className={iconStyles}>
+          <Link key={index} href={item.path} className={iconStyles} target="_blank" rel="noopener noreferrer">
             {item.icon}
-          </div>
+          </Link>
         );
       })}
     </div>
