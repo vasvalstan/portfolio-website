@@ -12,8 +12,8 @@ const Info = () => {
         <div className="w-[280px] flex items-start gap-4">
           <HiOutlineUser className="text-2xl mt-1 text-accent" />
           <div>
-            <p className="text-lg">Date of Birth</p>
-            <p>21 June 1996</p>
+            <p className="text-lg">Languages</p>
+            <p>English, Romanian</p>
           </div>
         </div>
         <div className="w-[280px] flex items-start gap-4">
@@ -30,7 +30,7 @@ const Info = () => {
           <HiOutlinePhone className="text-2xl mt-1 text-accent" />
           <div>
             <p className="text-lg">Phone</p>
-            <p>+44 7884043472</p>
+            <p>+44 7884 043 472</p>
           </div>
         </div>
         <div className="w-[280px] flex items-start gap-4">

@@ -1,11 +1,14 @@
 import {
-  RiReactjsFill,
-  RiNextjsFill,
-  RiHtml5Fill,
-  RiCss3Fill,
-  RiTailwindCssFill,
-  RiNodejsFill,
-} from "react-icons/ri";
+  SiTypescript,
+  SiPython,
+} from "react-icons/si";
+
+import {
+  TestTube,
+  Cloud,
+  Container,
+  Activity,
+} from "lucide-react";
 
 import {
   Tooltip,
@@ -16,28 +19,28 @@ import {
 
 const skills = [
   {
-    icon: <RiReactjsFill />,
-    name: "React.js",
+    icon: <TestTube />,
+    name: "Playwright",
   },
   {
-    icon: <RiNextjsFill />,
-    name: "Next.js",
+    icon: <SiTypescript />,
+    name: "TypeScript",
   },
   {
-    icon: <RiHtml5Fill />,
-    name: "HTML 5",
+    icon: <SiPython />,
+    name: "Python",
   },
   {
-    icon: <RiCss3Fill />,
-    name: "CSS 3",
+    icon: <Cloud />,
+    name: "AWS",
   },
   {
-    icon: <RiTailwindCssFill />,
-    name: "Tailwind CSS",
+    icon: <Container />,
+    name: "Docker",
   },
   {
-    icon: <RiNodejsFill />,
-    name: "Node.js",
+    icon: <Activity />,
+    name: "k6",
   },
 ];
 

@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { TypeAnimation } from "react-type-animation";
 import { MdArrowOutward } from "react-icons/md";
 import { HiOutlinePhone, HiOutlineMail } from "react-icons/hi";
+import Link from "next/link";
 
 // components
 import Blob from "@/components/Blob";
@@ -10,6 +11,10 @@ import Image from "next/image";
 import avatarImg from "@/public/assets/avatar.png";
 import Socials from "@/components/Socials";
 import Pattern from "@/components/Pattern";
+
+
+
+
 
 const Home = () => {
   return (
@@ -29,7 +34,7 @@ const Home = () => {
           <h1 className="h1 flex-1 mb-[28px]">
             Hi! I'm Valentin, <br />
             <TypeAnimation
-              sequence={["Software tester", 2000, "Software dev", 2000]}
+              sequence={["Senior QA Engineer", 2000, "Automation Expert", 2000, "QA Lead", 2000]}
               wrapper="span"
               speed={40}
               className="text-accent"
@@ -38,16 +43,16 @@ const Home = () => {
             />
           </h1>
           <p className="max-w-[500px] mb-[44px]">
-            I build visually captivating, user-friendly applications
-            that transform your ideas into seamless, engaging digital
-            experiences.
+            A curious and empathetic Senior QA Engineer with a passion for continuous improvement. 
+            I specialize in building robust automation frameworks, ensuring software quality through 
+            comprehensive testing strategies, and fostering collaborative team environments.
           </p>
-          <button className="btn btn-lg btn-accent mb-16">
+          <Link href="/contact" className="btn btn-lg btn-accent mb-16">
             <div className="flex items-center gap-3">
               <span>Let's talk.</span>
               <MdArrowOutward className="text-xl" />
             </div>
-          </button>
+          </Link>
           {/* contact info */}
           <div className="flex flex-col xl:flex-row xl:items-center gap-4 xl:gap-8 mb-12 xl:mb-0">
             {/* phone */}

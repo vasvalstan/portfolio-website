@@ -1,18 +1,38 @@
 const journey = [
   {
-    years: "2022 - Present",
-    role: "Web Developer & Designer",
-    institution: "Tech Inc",
+    years: "Oct 2025 - Present",
+    role: "Senior QA Engineer",
+    institution: "Psyomics",
   },
   {
-    years: "2020 - 2022",
-    role: "Web Developer",
-    institution: "XYZ Company",
+    years: "Sept 2024 - June 2025",
+    role: "Senior QA Engineer",
+    institution: "TAINA Technology",
+  },
+  {
+    years: "Mar 2024 - July 2024",
+    role: "Senior QA Automation Engineer",
+    institution: "Defaqto",
+  },
+  {
+    years: "May 2023 - Dec 2023",
+    role: "Mid QA Engineer",
+    institution: "Mindera",
+  },
+  {
+    years: "Jul 2022 - May 2023",
+    role: "QA Automation Engineer",
+    institution: "Nagarro",
+  },
+  {
+    years: "May 2021 - June 2022",
+    role: "QA Automation Engineer",
+    institution: "Digital Distribution Group",
   },
   {
     years: "2016 - 2020",
-    role: "Student",
-    institution: "University of Design",
+    role: "QA Lead / Senior / Tester",
+    institution: "Gameloft & Quantic Lab",
   },
 ];
 

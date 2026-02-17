@@ -1,5 +1,6 @@
 import { Sometype_Mono } from "next/font/google";
 import "./globals.css";
+import "@/lib/polyfills";
 // components
 import MainNav from "@/components/MainNav";
 import PageTransition from "@/components/PageTransition";
@@ -13,8 +14,8 @@ const sometypeMono = Sometype_Mono({
 });
 
 export const metadata = {
-  title: "Valentin Stanciu Portfolio",
-  description: "Valentin Stanciu Portfolio",
+  title: "Valentin Stanciu | Senior QA Engineer",
+  description: "Portfolio of Valentin Stanciu, Senior QA Engineer specializing in automation, performance testing, and CI/CD.",
 };
 
 export default function RootLayout({ children }) {

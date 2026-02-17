@@ -5,7 +5,6 @@ import Image from "next/image";
 
 // components
 import Stats from "@/components/Stats";
-import Testimonial from "@/components/Testimonial";
 import Info from "@/components/Info";
 import Journey from "@/components/Journey";
 import Skills from "@/components/Skills";
@@ -65,7 +64,7 @@ const About = () => {
 
               <div className="flex flex-col items-start gap-16">
                 <Stats />
-                <Testimonial />
+                <div className="mb-12"></div>
                 <Info />
                 <Journey />
                 <Skills />

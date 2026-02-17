@@ -17,98 +17,47 @@ import { FaGithub } from "react-icons/fa";
 const projects = [
   {
     id: 1,
-    category: "frontend",
-    title: "LaunchWave Landing Page",
-    description: "React + Tailwind landing page",
+    category: "automation",
+    title: "Psyomics Platform Automation",
+    description: "E2E Playwright/TS framework within Nx monorepo",
     image: "/assets/work/thumb1.png",
     link: "",
     github: "",
-    tech: ["React", "Tailwind CSS", "Framer Motion"],
+    tech: ["Playwright", "TypeScript", "Nx", "AWS"],
   },
   {
     id: 2,
-    category: "frontend",
-    title: "Nextfolio Portfolio Site",
-    description: "Next.js portfolio site",
+    category: "automation",
+    title: "TAINA Tech Frameworks",
+    description: "Web UI & API automation with Vitest integration",
     image: "/assets/work/thumb2.png",
     link: "",
     github: "",
-    tech: ["Next.js", "Tailwind CSS", "Shadcn UI"],
+    tech: ["Playwright", "Vitest", "NestJS", "Docker"],
   },
   {
     id: 3,
-    category: "fullstack",
-    title: "AuthBoard Dashbord",
-    description: "Mern app with authentication",
+    category: "performance",
+    title: "Scalable Load Testing",
+    description: "Distributed load testing on AWS using k6",
     image: "/assets/work/thumb3.png",
     link: "",
     github: "",
-    tech: ["MongoDB", "Express", "React", "Node.js"],
+    tech: ["k6", "Grafana", "AWS", "Docker"],
   },
   {
     id: 4,
-    category: "fullstack",
-    title: "ChatSync Platform",
-    description: "Real-time MERN app with chat functionality",
+    category: "contract",
+    title: "Microservices Contract Testing",
+    description: "PactJS consumer-provider contract testing",
     image: "/assets/work/thumb4.png",
     link: "",
     github: "",
-    tech: ["MERN", "Socket.IO", "Redux"],
-  },
-  {
-    id: 5,
-    category: "uiux",
-    title: "FlowMobile App Design",
-    description: "Mobile-first Figma design",
-    image: "/assets/work/thumb1.png",
-    link: "",
-    github: "",
-    tech: ["Figma", "Adobe XD"],
-  },
-  {
-    id: 6,
-    category: "uiux",
-    title: "ShopEase Dashboard Redesign",
-    description: "Redesign of e-commerce dashboard",
-    image: "/assets/work/thumb2.png",
-    link: "",
-    github: "",
-    tech: ["Figma", "Framer", "Whimsical"],
-  },
-  {
-    id: 7,
-    category: "branding",
-    title: "Brewhaus Brand Identity",
-    description: "A bold and earthy visual identity for a modern coffee brand",
-    image: "/assets/work/thumb3.png",
-    link: "",
-    github: "",
-    tech: ["Illustrator", "Photoshop", "Figma"],
-  },
-  {
-    id: 8,
-    category: "branding",
-    title: "LunaSkin Luxury Branding",
-    description: "Elegant branding for a premium skincare product line",
-    image: "/assets/work/thumb4.png",
-    link: "",
-    github: "",
-    tech: ["Photoshop", "Figma", "Canva"],
-  },
-  {
-    id: 9,
-    category: "branding",
-    title: "NovaTach Brand Kit",
-    description:
-      "Full branding kit for a tech startup including logo and brand book",
-    image: "/assets/work/thumb1.png",
-    link: "",
-    github: "",
-    tech: ["Illustrator", "Figma", "Notion"],
+    tech: ["Pact", "NestJS", "AWS", "Microservices"],
   },
 ];
 
-const categories = ["frontend", "fullstack", "uiux", "branding"];
+const categories = ["automation", "performance", "contract"];
 
 const Work = () => {
   return (
@@ -123,11 +72,11 @@ const Work = () => {
       <div className="container mx-auto w-full h-full flex flex-col justify-center">
         {/* heading */}
         <h2 className="h2 mb-6 xl:mb-12 max-w-[600px]">
-          My Latest <span className="text-accent">Work</span>
+          My Recent <span className="text-accent">Projects</span>
         </h2>
         {/* tabs */}
         <Tabs
-          defaultValue="frontend"
+          defaultValue="automation"
           className="w-full flex flex-col gap-6 xl:gap-12"
         >
           {/* tabs list */}
@@ -139,7 +88,7 @@ const Work = () => {
                   value={category}
                   className="capitalize border border-white/10 data-[state=active]:bg-accent data-[state=active]:border-accent h-[48px] px-6 rounded-full cursor-pointer"
                 >
-                  {category === "uiux" ? "UI UX Design" : category}
+                  {category}
                 </TabsTrigger>
               );
             })}
@@ -164,6 +113,7 @@ const Work = () => {
                               <div className="w-full max-w-[380px] flex flex-col gap-6 xl:gap-8 xl:pt-6 order-2 xl:order-none">
                                 {/* title */}
                                 <h3 className="h3">{project.title}</h3>
+                                <p className="text-white/60">{project.description}</p>
                                 {/* tech */}
                                 <div className="xl:mb-4 max-w-[300px] min-h-[130px]">
                                   <p className="mb-4">Technologies Used</p>
